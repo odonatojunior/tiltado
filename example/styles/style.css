@@ -35,7 +35,8 @@ p {
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;  
-  gap: .5rem;
+  gap: 2rem;
+  flex-direction: column;
 }
 
 .card {
@@ -56,8 +57,8 @@ p {
   display: block;
   position: absolute;
   z-index: 1;
-  width: 80px;
-  height: 80px;
+  width: 48px;
+  height: 48px;
   filter: blur(32px);
 }
 .card::before {
