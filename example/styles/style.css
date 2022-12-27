@@ -28,7 +28,7 @@ p {
 }
 
 .wrapper {
-  background-color: #171718;
+  background-color: #19171f;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -40,27 +40,19 @@ p {
 }
 
 .card {
+  background-color: #1e1c25;
   transition: 0 .3s all;
   display: block;
   padding: 2rem 1.5rem;
   width: 600px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  border: 1px solid #4e3d54;
   position: relative;
   z-index: 5;
+  box-shadow:
+  4px 4px #F43C91,
+  8px 8px #FFB043,
+  12px 12px #523388;
 }
 
-.card::before,
-.card::after {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 1;
-  width: 48px;
-  height: 48px;
-  filter: blur(32px);
-}
 .card::before {
   background-color: #911fa1;
   top: -24px;
@@ -85,8 +77,7 @@ p {
 .icon {
   display: inline-block;
   padding: .5rem;
-  background-color: #911fa1;
-  border-radius: 5px;
+  background-color: #F43C91;
 }
 
 .icon svg {
