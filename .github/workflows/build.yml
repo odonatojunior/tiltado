@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -30,6 +29,15 @@ jobs:
     - name: Yarn CLI
       uses: CultureHQ/actions-yarn@v1.0.1
       
-    - run: yarn
+    - name: install yarn dependencies
+      run: yarn install
     
-    - run: yarn build
+    - name: build dist/ folder with transpiled JS code
+      run: yarn build
+
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: build
+        path: build
+        if-no-files-found: error
