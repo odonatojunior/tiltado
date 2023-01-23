@@ -39,5 +39,5 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         name: build
-        path: build
+        path: dist
         if-no-files-found: error
